@@ -5,7 +5,7 @@ import Logo from './Logo';
 const Navbar = () => {
   return (
     <Wrapper>
-      <h4 className='logo'>Russell <span>Ramiro</span></h4>
+      <a href='index.html' className='logo'>Russell <span>Ramiro</span></a>
       <Logo/>
       <ul className='menu'>
         <li>
