@@ -94,7 +94,7 @@ gap: 1.5rem;
     .title{
         font-size: var(--size-5xl);
     }
-    .description{h;
+    .description{
         font-size: var(--size-base);
     }
     .btn{
@@ -110,7 +110,7 @@ gap: 1.5rem;
     .title{
         font-size: var(--size-7xl);
     }
-    .description{h;
+    .description{
         font-size: var(--size-lg);
     }
     .btn{
@@ -127,7 +127,7 @@ gap: 2rem;
     .title{
         font-size: var(--size-9xl);
     }
-    .description{h;
+    .description{
         font-size: var(--size-xl);
     }
     .btn{

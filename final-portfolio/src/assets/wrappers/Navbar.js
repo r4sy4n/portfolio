@@ -7,10 +7,18 @@ align-items: center;
 padding-top: 2rem;
 padding-bottom: 2rem;
 
-h4{
+a{
+    text-decoration: none;
     color: var(--clr-light);
     font-size: var(--size-xs);
     font-weight: 600;
+    font-size: var(--size-xs);
+    letter-spacing: -0.05em;
+    transition: color 0.3s;
+}
+a:hover {
+    color: var(--clr-green);
+    text-shadow: 8px 8px 11px #03C988;
 }
 .logo{
     transition: color 0.3s;
@@ -22,6 +30,9 @@ h4{
 .logo:hover {
     color: var(--clr-green);
     text-shadow: 8px 8px 11px #03C988;
+}
+.sun:hover{
+    color: var(--clr-green);
 }
 .bars{
     color: var(--clr-light);
@@ -38,17 +49,6 @@ h4{
         align-items: center;
         padding: 0;
         gap: 2em;
-    }
-    a {
-        text-decoration: none;
-        font-size: var(--size-xs);
-        font-weight: 600;
-        letter-spacing: -0.05em;
-        transition: color 0.3s;
-    }
-    a:hover {
-        color: var(--clr-green);
-        text-shadow: 8px 8px 11px #03C988;
     }
     .line{
         border: 1px solid var(--clr-gray800);
@@ -73,9 +73,6 @@ h4{
 
 /* lg */
 @media only screen and (min-width: 1024px) {
-    h4 {
-        font-size: var(--size-sm);
-    }
     a {
         font-size: var(--size-sm);
     }
