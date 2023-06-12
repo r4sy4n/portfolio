@@ -18,7 +18,7 @@ p{
   font-size: var(--size-sm);
 }
 p:hover{
-  color: var(--clr-gray600);
+  color: var(--clr-gray600) !important;
   cursor: default;
 }
 li{
@@ -51,10 +51,6 @@ li{
     right: 10px;
     cursor: pointer;
 }
-/* xs */
-/* @media only screen and (min-width: 475px) {
-
-} */
 
 /* sm */
 @media only screen and (min-width: 640px) {

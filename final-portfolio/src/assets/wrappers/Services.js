@@ -27,29 +27,14 @@ p:hover{
     color: var(--clr-green);
 }
 
-/* xs */
-/* @media only screen and (min-width: 475px) {
-
-} */
-
 /* sm */
 @media only screen and (min-width: 640px) {
     .content_services{
-            display: grid;
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 1rem;
-        }
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+    }
 }
-
-/* md */
-@media only screen and (min-width: 768px) {
-    
-}
-
-/* lg */
-/* @media only screen and (min-width: 1024px) {
-
-} */
 
 /* xl */
 @media only screen and (min-width: 1280px) {
@@ -60,11 +45,6 @@ p:hover{
         font-size: var(--size-6xl)
     }
 }
-
-/* 2xl */
-/* @media only screen and (min-width: 1536px) {
-
-} */
 
 `
 

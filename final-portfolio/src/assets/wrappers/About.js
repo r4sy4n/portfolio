@@ -11,6 +11,9 @@ gap: 1rem;
     align-items: center;
     margin-top: 2rem;
 }
+.btn{
+        font-size: var(--size-sm);
+}
 .btn-icon{
     margin-left: 0.5rem;
 }
