@@ -3,7 +3,7 @@ import Wrapper from '../assets/wrappers/Hero';
 
 const Hero = () => {
   return (
-    <Wrapper>
+    <Wrapper id='hero'>
         <h2 className='subtitle'>Hello, I am <span>Russell</span></h2>
         <h1 className='title'>Full Stack<br></br> Web Developer</h1>
         <p className='description'><strong>Empowering</strong> and <strong>Elevating</strong> Your Digital Online Presence<br></br> Harnessing <span>Full Stack Expertise</span> to Drive Seamless User Experiences and Amplify Your <strong>Business Growth</strong></p>
@@ -17,4 +17,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;

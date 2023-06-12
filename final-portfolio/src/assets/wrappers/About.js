@@ -17,15 +17,13 @@ gap: 1rem;
 .title{
     font-size: var(--size-2xl);
     color: var(--clr-light);
+    margin-bottom: 1rem;
 }
 .subtitle{
-    color: var(--clr-gray400);
-    font-size: var(--size-sm);
+    margin-bottom: 1rem;
 }
 .description{
     max-width: 60ch;
-    font-size: var(--size-sm);
-    color: var(--clr-gray400);
 }
 .icon{
     display: grid;
@@ -53,6 +51,9 @@ hr{
 .description{
     font-size: var(--size-base);
 }
+.btn{
+        font-size: var(--size-base);
+    }
 }
 
 /* lg */
@@ -75,8 +76,11 @@ hr{
         font-size: var(--size-lg);
     }
     .icon{
-    font-size: var(--size-6xl);
-}
+        font-size: var(--size-6xl);
+    }
+    .btn{
+        font-size: var(--size-lg);
+    }
 }
 
 /* xl */
@@ -88,6 +92,9 @@ hr{
         font-size: var(--size-xl);
     }
     .description{
+        font-size: var(--size-xl);
+    }
+    .btn{
         font-size: var(--size-xl);
     }
 }

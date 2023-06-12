@@ -8,11 +8,7 @@ padding-top: 2rem;
 padding-bottom: 2rem;
 
 a{
-    text-decoration: none;
-    color: var(--clr-light);
-    font-size: var(--size-xs);
     font-weight: 600;
-    font-size: var(--size-xs);
     letter-spacing: -0.05em;
     transition: color 0.3s;
 }

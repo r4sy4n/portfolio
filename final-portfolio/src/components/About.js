@@ -3,7 +3,7 @@ import Wrapper from '../assets/wrappers/About';
 import CV from '../assets/resume/RussellRamiro_FullStackDev_MERN_2023.pdf';
 import {AiOutlineHtml5, AiOutlineGithub} from 'react-icons/ai';
 import {FaCss3Alt, FaBootstrap, FaNode} from 'react-icons/fa';
-import {TbBrandJavascript, TbApi} from 'react-icons/tb';
+import {TbBrandJavascript, TbApi, TbBrandVscode} from 'react-icons/tb';
 import {DiReact} from 'react-icons/di';
 import {SiMongodb, SiExpress, SiStyledcomponents} from 'react-icons/si';
 import {BsGit, BsDatabase} from 'react-icons/bs';
@@ -12,7 +12,7 @@ import {BiDownload} from 'react-icons/bi';
 
 const About = () => {
   return (
-    <Wrapper>
+    <Wrapper id='about-me'>
       <div className='grid'>
         <div>
             <h2 className='title'><strong>About</strong></h2>
@@ -43,6 +43,7 @@ const About = () => {
                 <TbApi/>
                 <SiStyledcomponents/>
                 <FaBootstrap/>
+                <TbBrandVscode/>
             </div>
         </div>
       </div>

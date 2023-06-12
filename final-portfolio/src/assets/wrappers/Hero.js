@@ -11,20 +11,14 @@ margin-top: 5rem;
 height: 100vh;
 
 .subtitle{
-    color: var(--clr-gray600);
-    font-size: var(--size-base);
     line-height: 0.9;
 }
 .title{
-    color: var(--clr-gray400);
     text-transform: uppercase;
-    font-size: var(--size-4xl);
     line-height: 0.9;
 }
 .description{
     max-width: 60ch;
-    font-size: var(--size-sm);
-    color: var(--clr-gray400);
 }
 .btn{
     text-transform: capitalize;
