@@ -12,7 +12,7 @@ import {BiDownload} from 'react-icons/bi';
 
 const About = () => {
   return (
-    <Wrapper id='about-me'>
+    <Wrapper id='#about-me'>
       <div className='grid'>
         <div>
             <h2 className='title'><strong>About</strong></h2>

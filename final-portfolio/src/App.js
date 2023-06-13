@@ -6,6 +6,7 @@ import About from './components/About';
 import Services from './components/Services';
 import CallToAction from './components/CallToAction';
 import FeaturedProjects from './components/FeaturedProjects';
+import Projects from './components/Projects';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Services />
         <CallToAction />
         <FeaturedProjects />
+        <Projects />
       </main>
     </>
   );
