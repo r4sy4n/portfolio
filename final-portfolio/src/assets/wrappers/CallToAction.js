@@ -16,7 +16,7 @@ gap: 1rem;
 
 }
 .btn{
-        font-size: var(--size-sm);
+    font-size: var(--size-sm);
 }
 
 /* xs */

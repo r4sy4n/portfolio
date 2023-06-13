@@ -12,7 +12,7 @@ gap: 1rem;
     margin-top: 2rem;
 }
 .btn{
-        font-size: var(--size-sm);
+    font-size: var(--size-sm);
 }
 .btn-icon{
     margin-left: 0.5rem;
