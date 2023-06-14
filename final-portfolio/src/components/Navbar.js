@@ -6,7 +6,9 @@ const Navbar = () => {
   return (
     <Wrapper id='navbar'>
       <a href='index.html' className='logo'>Russell <span>Ramiro</span></a>
-      <Logo/>
+      <a href='index.html'>
+        <Logo/>
+      </a>
       <ul className='menu'>
         <li>
           <a href="#about-me"><span>01. </span>About</a>

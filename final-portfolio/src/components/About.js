@@ -11,6 +11,13 @@ import {IoLogoGitlab} from 'react-icons/io5';
 import {BiDownload} from 'react-icons/bi';
 
 const About = () => {
+  const IconWithTooltip = ({ icon: Icon, tooltip }) => (
+  <div className="tooltip">
+    <Icon />
+    <span className="tooltiptext">{tooltip}</span>
+  </div>
+);
+
   return (
     <Wrapper id='#about-me'>
       <div className='grid'>
@@ -29,21 +36,21 @@ const About = () => {
             the tools that were used on a per project basis.
             </p>
             <div className="icon list">
-                <AiOutlineHtml5/>
-                <FaCss3Alt/>
-                <TbBrandJavascript/>
-                <DiReact/>
-                <SiMongodb/>
-                <SiExpress/>
-                <FaNode/>
-                <BsGit/>
-                <IoLogoGitlab/>
-                <AiOutlineGithub/>
-                <BsDatabase/>
-                <TbApi/>
-                <SiStyledcomponents/>
-                <FaBootstrap/>
-                <TbBrandVscode/>
+                <IconWithTooltip icon={AiOutlineHtml5} tooltip="HTML5" />
+                <IconWithTooltip icon={FaCss3Alt} tooltip="CSS3" />
+                <IconWithTooltip icon={TbBrandJavascript} tooltip="JavaScript" />
+                <IconWithTooltip icon={DiReact} tooltip="React" />
+                <IconWithTooltip icon={SiMongodb} tooltip="MongoDB" />
+                <IconWithTooltip icon={SiExpress} tooltip="Express" />
+                <IconWithTooltip icon={FaNode} tooltip="Node.js" />
+                <IconWithTooltip icon={BsGit} tooltip="Git" />
+                <IconWithTooltip icon={IoLogoGitlab} tooltip="GitLab" />
+                <IconWithTooltip icon={AiOutlineGithub} tooltip="GitHub" />
+                <IconWithTooltip icon={TbApi} tooltip="RestAPI" />
+                <IconWithTooltip icon={BsDatabase} tooltip="Database Design" />
+                <IconWithTooltip icon={SiStyledcomponents} tooltip="Styled Components" />
+                <IconWithTooltip icon={FaBootstrap} tooltip="Bootstrap" />
+                <IconWithTooltip icon={TbBrandVscode} tooltip="VS Code" />
             </div>
         </div>
       </div>
