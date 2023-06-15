@@ -11,7 +11,7 @@ import { Pagination, Navigation, Autoplay } from "swiper";
 import Baccarat from './Baccarat';
 import Buglift from './Buglift';
 import Connectify from './Connectify';
-
+import Portfolio from './Portfolio';
 
 
 const FeaturedProjects = () => {
@@ -41,6 +41,7 @@ const FeaturedProjects = () => {
             modules={[Pagination, Navigation, Autoplay]}
             className="mySwiper"
           >
+            <SwiperSlide><Portfolio/></SwiperSlide>
             <SwiperSlide><Baccarat/></SwiperSlide>
             <SwiperSlide><Buglift/></SwiperSlide>
             <SwiperSlide><Connectify/></SwiperSlide>

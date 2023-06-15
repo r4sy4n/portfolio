@@ -11,6 +11,7 @@ import { Pagination, Navigation } from "swiper";
 import Baccarat from './Baccarat';
 import Buglift from './Buglift';
 import Connectify from './Connectify';
+import Portfolio from './Portfolio';
 import {AiOutlineHtml5, AiOutlineGithub} from 'react-icons/ai';
 import {FaCss3Alt} from 'react-icons/fa';
 import {TbBrandJavascript, TbWorldWww} from 'react-icons/tb';
@@ -29,6 +30,24 @@ const Projects = () => {
     );
 
     const slideDetails = [
+    {
+      title: 'First Portfolio',
+      description: 'This portfolio website demonstrates my skills in HTML and CSS by showcasing my ability to create visually appealing designs, structure web pages effectively, apply responsive design techniques, create interactive elements, and adhere to best practices for accessibility and code organization.',
+      tools: [
+        <IconWithTooltip icon={AiOutlineHtml5} tooltip="HTML5" />, 
+        <IconWithTooltip icon={FaCss3Alt} tooltip="CSS3" />,  
+      ],
+      links: [
+            {
+                icon: <AiOutlineGithub />,
+                url: 'https://github.com/r4sy4n/first-portfolio',
+            },
+            {
+                icon: <TbWorldWww />,
+                url: 'https://kaleidoscopic-treacle-252f16.netlify.app',
+            },
+        ],
+    },        
     {
       title: 'Baccarat',
       description: 'A Baccarat game powered by JavaScript, HTML and CSS. This game demonstrates my ability to apply JavaScript to handle game logic, user interactions, randomization, animations, and error handling. These skills showcase my proficiency in JavaScript and my ability to create interactive and engaging web applications.',
@@ -137,6 +156,7 @@ const Projects = () => {
                     className="mySwiper"
                     onSlideChange={handleSlideChange}
                     >
+                    <SwiperSlide><Portfolio/></SwiperSlide>
                     <SwiperSlide><Baccarat/></SwiperSlide>
                     <SwiperSlide><Buglift/></SwiperSlide>
                     <SwiperSlide><Connectify/></SwiperSlide>
