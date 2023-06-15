@@ -5,7 +5,6 @@ margin-top: 5rem;
 display: flex;
 flex-direction: column;
 gap: 1rem;
-height: 80vh;
 a{
   font-size: var(--size-xl);
 }
