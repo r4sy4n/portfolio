@@ -9,6 +9,7 @@ import FeaturedProjects from './components/FeaturedProjects';
 import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
+import ScrollUp from './components/ScrollUp';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <ContactMe />
         <Footer />
       </main>
+        <ScrollUp />
     </>
   );
 }
