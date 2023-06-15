@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-margin-top: 5rem;
+margin-top: var(--size-7xl);
 display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
 gap: 1rem;
-
+height: 50vh;
 .cta{
     display: flex;
     justify-content: center;

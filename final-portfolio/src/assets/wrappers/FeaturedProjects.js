@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.section`
-margin-top: 5rem;
+margin-top: var(--size-7xl);
 display: flex;
 flex-direction: column;
+justify-content: center;
 gap: 1rem;
+height: 70vh;
 a{
   font-size: var(--size-xl);
 }
@@ -30,8 +32,11 @@ a{
   height: 100%;
   object-fit: cover;
 }
-/* sm */
-@media only screen and (min-width: 640px) {
+.mySwiper{
+  margin-top: var(--size-4xl);
+}
+/* md */
+@media only screen and (min-width: 768px) {
   margin-top: 0;
   .projects-container{
     display: grid;
@@ -40,6 +45,9 @@ a{
     justify-content: center;
     align-items: center;
   }
+  .projects-container :nth-child(1) {
+     order: 1; 
+    }
   .swiper {
   width: 50vh;
   height: 50vh;
