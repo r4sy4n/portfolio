@@ -6,7 +6,6 @@ justify-content: space-between;
 align-items: center;
 padding-top: 2rem;
 padding-bottom: 2rem;
-
 a{
     font-weight: 600;
     letter-spacing: -0.05em;
@@ -36,7 +35,9 @@ a:hover {
     height: var(--size-xl);
     display: block;
 }
-
+.bars:hover{
+    color: var(--clr-green);
+}
 /* md */
 @media only screen and (min-width: 768px) {
     ul {

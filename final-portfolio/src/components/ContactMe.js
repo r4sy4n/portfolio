@@ -7,7 +7,7 @@ import {AiOutlineGithub} from 'react-icons/ai';
 const ContactMe = () => {
   return (
     <Wrapper>
-        <div className='contact-container'>
+        <div id='contact' className='contact-container'>
             <div className='email-container'>
                 <h1>Let's get in touch!</h1>
                 <p>Either by <span>email</span> or through my <span>social media.</span></p>

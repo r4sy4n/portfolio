@@ -1,26 +1,43 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Wrapper from '../assets/wrappers/Navbar';
 import Logo from './Logo';
+import mobileNav from '../utils/mobile-nav';
 
 const Navbar = () => {
+  const [isMobileNavOpen, setMobileNavOpen] = useState(false);
+  const [activeNav, setActiveNav] = useState('#hero');
+
+  const handleBarsClick = () => {
+    mobileNav();
+  };
+
+  const handleNavLinkClick = (sectionId) => {
+    setMobileNavOpen(false);
+    setActiveNav(sectionId);
+    const element = document.querySelector(sectionId);
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <Wrapper id='navbar'>
       <a href='index.html' className='logo'>Russell <span>Ramiro</span></a>
       <a href='index.html'>
         <Logo/>
       </a>
-      <ul className='menu'>
+      <ul className={`menu ${isMobileNavOpen ? 'open' : ''}`}>
         <li>
-          <a href="#about-me"><span>01. </span>About</a>
+          <a href="#about" onClick={() => handleNavLinkClick('#about')}><span>01. </span>About</a>
         </li>
         <li>
-          <a href="#projects"><span>02. </span>Projects</a>
+          <a href="#projects" onClick={() => handleNavLinkClick('#projects')}><span>02. </span>Projects</a>
         </li>
         <li>
-          <a href="#services"><span>03. </span>Services</a>
+          <a href="#services" onClick={() => handleNavLinkClick('#services')}><span>03. </span>Services</a>
         </li>
         <li>
-          <a href="#contact-me"><span>04. </span>Contact</a>
+          <a href="#contact" onClick={() => handleNavLinkClick('#contact')}><span>04. </span>Contact</a>
         </li>
         <li className='line'></li>
         <li>
@@ -31,11 +48,12 @@ const Navbar = () => {
           </button>
         </li>
       </ul>
-      <button className='bars'>
+      <button className='bars' onClick={handleBarsClick} >
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
         <path d="M3 6.75A.75.75 0 013.75 6h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 6.75zM3 12a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75A.75.75 0 013 12zm0 5.25a.75.75 0 01.75-.75h16.5a.75.75 0 010 1.5H3.75a.75.75 0 01-.75-.75z" />
         </svg>
       </button>
+      
     </Wrapper>
   )
 }

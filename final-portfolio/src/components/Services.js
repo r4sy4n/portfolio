@@ -33,29 +33,30 @@ const Services = () => {
 
   return (
     <Wrapper id='services'>
-      <h2>How I'll <strong>Grow</strong> Your Business</h2>
-      <h3>My <span>Services</span></h3>
-      <div className='content_services'>
-        <div className='service'>
-          <ImStack className='icon'/>
-          <h3>Full Stack Web Development</h3>
-          <p onClick={fullStackOpenModal}>More Details</p>
-          {fullStackModalOpen && <FullStackModal fullStackCloseModal={fullStackCloseModal} />}
-        </div>
-        <div className='service'>
-          <BsDatabaseLock className='icon'/>
-          <h3>Database Management</h3>
-          <p onClick={databseOpenModal}>More Details</p>
-          {databaseModalOpen && <DatabaseModal databaseCloseModal={databaseCloseModal} />}
-        </div>
-        <div className='service'>
-          <AiOutlineShop className='icon'/>
-          <h3>Ecommerce</h3>
-          <p onClick={ecomOpenModal}>More Details</p>
-          {ecomModalOpen && <EcommerceModal ecomCloseModal={ecomCloseModal} />}
+      <div>
+        <h2>How I'll <strong>Grow</strong> Your Business</h2>
+        <h3>My <span>Services</span></h3>
+        <div className='content_services'>
+          <div className='service'>
+            <ImStack className='icon'/>
+            <h3>Full Stack Web Development</h3>
+            <p onClick={fullStackOpenModal}>More Details</p>
+            {fullStackModalOpen && <FullStackModal fullStackCloseModal={fullStackCloseModal} />}
+          </div>
+          <div className='service'>
+            <BsDatabaseLock className='icon'/>
+            <h3>Database Management</h3>
+            <p onClick={databseOpenModal}>More Details</p>
+            {databaseModalOpen && <DatabaseModal databaseCloseModal={databaseCloseModal} />}
+          </div>
+          <div className='service'>
+            <AiOutlineShop className='icon'/>
+            <h3>Ecommerce</h3>
+            <p onClick={ecomOpenModal}>More Details</p>
+            {ecomModalOpen && <EcommerceModal ecomCloseModal={ecomCloseModal} />}
+          </div>
         </div>
       </div>
-
     </Wrapper>
   )
 }

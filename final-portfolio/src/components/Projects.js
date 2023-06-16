@@ -120,8 +120,8 @@ const Projects = () => {
   };
 
   return (
-    <Wrapper id='#projects'>
-        <div className='grid-container'>
+    <Wrapper>
+        <div id='projects' className='grid-container'>
             <div>
                 <h2><strong>Projects</strong></h2>
                 <h2 className='title'>{slideDetails[currentSlideIndex].title}</h2>

@@ -19,8 +19,8 @@ const About = () => {
 );
 
   return (
-    <Wrapper id='#about-me'>
-      <div className='grid'>
+    <Wrapper>
+      <div id='about' className='grid'>
         <div>
             <h2 className='title'><strong>About</strong></h2>
               <p className='description'>Hello there! I'm Russell, a <span>Full Stack Web developer</span> specializing in the <strong>MERN Stack</strong>. I have successfully completed Uplift Code Camp's Full Stack Web Development bootcamp.</p>

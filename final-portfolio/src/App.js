@@ -10,6 +10,7 @@ import Projects from './components/Projects';
 import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
 import ScrollUp from './components/ScrollUp';
+import Mobile from './components/Mobile';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Navbar />
       </div>
       <main className="container">
+        <Mobile />
         <Hero />
         <About />
         <Services />
