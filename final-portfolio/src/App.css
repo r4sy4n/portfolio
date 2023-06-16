@@ -157,6 +157,19 @@ p{
 .sticky{
   position: static;
 }
+/* Scrollbar */
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--clr-green);
+  outline: 1px solid var(--clr-green);
+}
 
 /* xs */
 @media only screen and (min-width: 475px) {
