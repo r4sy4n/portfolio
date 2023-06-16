@@ -44,7 +44,7 @@ const Projects = () => {
             },
             {
                 icon: <TbWorldWww />,
-                url: 'https://kaleidoscopic-treacle-252f16.netlify.app',
+                url: 'https://russell-first-portfolio.netlify.app',
             },
         ],
     },        
@@ -59,11 +59,11 @@ const Projects = () => {
       links: [
             {
                 icon: <AiOutlineGithub />,
-                url: 'https://github.com/baccarat',
+                url: 'https://github.com/r4sy4n/baccarat-jsgame',
             },
             {
                 icon: <TbWorldWww />,
-                url: 'https://www.baccarat.com',
+                url: 'https://baccarat-javascript-game.netlify.app',
             },
         ],
     },
@@ -82,11 +82,11 @@ const Projects = () => {
       links: [
             {
                 icon: <AiOutlineGithub />,
-                url: 'https://github.com/baccarat',
+                url: '',
             },
             {
                 icon: <TbWorldWww />,
-                url: 'https://www.baccarat.com',
+                url: '',
             },
         ],
     },
@@ -105,11 +105,11 @@ const Projects = () => {
       links: [
             {
                 icon: <AiOutlineGithub />,
-                url: 'https://github.com/baccarat',
+                url: '',
             },
             {
                 icon: <TbWorldWww />,
-                url: 'https://www.baccarat.com',
+                url: '',
             },
         ],
     },
