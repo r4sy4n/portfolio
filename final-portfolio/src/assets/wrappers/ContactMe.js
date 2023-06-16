@@ -24,7 +24,11 @@ a{
 .email-container p{
     margin: var(--size-lg);
 }
-
+.email-container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .contact-form{
     width: 360px;
 }
@@ -93,6 +97,9 @@ a{
     }
     .contact-links{
         flex-direction: column;
+    }
+    .email-container a{
+        display: block;
     }
 }
 /* xl */

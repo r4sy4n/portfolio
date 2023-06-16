@@ -8,7 +8,7 @@ const CallToAction = () => {
                 <h1>Let's <span>talk</span> about your project</h1>
             </div>
             <div className='cta'>
-                <a href="#contact-me" className='btn'>Contact me</a>
+                <a href="#contact" className='btn'>Contact me</a>
             </div>
     </Wrapper>
   )

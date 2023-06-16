@@ -98,7 +98,7 @@ button {
 a {
   color: var(--clr-light);
   text-decoration: none;
-  font-size: var(--size-xs);
+  font-size: var(--size-base);
 }
 span {
   color: var(--clr-green);

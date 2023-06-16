@@ -71,7 +71,7 @@ a:hover {
 /* lg */
 @media only screen and (min-width: 1024px) {
     a {
-        font-size: var(--size-sm);
+        font-size: var(--size-lg);
     }
     .sun{
         width: var(--size-lg);
