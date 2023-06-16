@@ -14,15 +14,15 @@ const ModalWrapper = styled.main`
 
 p{
   margin-top: 0.5rem;
-  color: var(--clr-gray600);
+  color: var(--clr-gray400);
   font-size: var(--size-sm);
 }
 p:hover{
-  color: var(--clr-gray600) !important;
+  color: var(--clr-gray400) !important;
   cursor: default;
 }
 li{
-    color: var(--clr-gray800);
+    color: var(--clr-gray600);
     font-size: var(--size-sm);
     margin-top: 0.5rem;
 }
@@ -30,7 +30,7 @@ li{
     position: relative;
     min-width: 30%;
     min-height: 35%;
-    background: var(--clr-light);
+    background: var(--clr-dark);
     text-align: left;
     border-radius: 10px;
     padding: 30px 50px;
