@@ -1,10 +1,24 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Wrapper from '../assets/wrappers/ContactMe';
 import {MdOutlineMarkEmailRead} from 'react-icons/md';
 import {ImLinkedin} from 'react-icons/im';
 import {AiOutlineGithub} from 'react-icons/ai';
+import { toast } from 'react-toastify';
 
 const ContactMe = () => {
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_hv1w2gz', 'template_hkon7er', form.current, 'YxvJNMH0KnF8e9f-0')
+        .then((result) => {
+            e.target.reset();
+            toast.success('Message Sent!')
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
   return (
     <Wrapper>
         <div id='contact' className='contact-container'>
@@ -29,7 +43,7 @@ const ContactMe = () => {
                     </a>
                 </div>
             </div>    
-            <form className='contact-form'>
+            <form ref={form} onSubmit={sendEmail} className='contact-form'>
                 <h2 className='contact-title'>Write me your project</h2>
                 <div className='contact__form-div'>
                     <label className='contact__form-tag'>Name</label>

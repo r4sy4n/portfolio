@@ -11,6 +11,8 @@ import ContactMe from './components/ContactMe';
 import Footer from './components/Footer';
 import ScrollUp from './components/ScrollUp';
 import Mobile from './components/Mobile';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -30,6 +32,7 @@ function App() {
         <Footer />
       </main>
         <ScrollUp />
+        <ToastContainer position='top-center' autoClose={3000} />
     </>
   );
 }
