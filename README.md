@@ -39,11 +39,12 @@ To run the portfolio website locally, follow these steps:
 </ul>
 
 ## Technologies Used
-
-React
-HTML
-CSS
-JavaScript
+<ul>
+<li>React</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
 
 ## License
 
