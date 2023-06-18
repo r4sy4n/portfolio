@@ -82,11 +82,11 @@ const Projects = () => {
       links: [
             {
                 icon: <AiOutlineGithub />,
-                url: '',
+                url: 'https://github.com/r4sy4n/buglift',
             },
             {
                 icon: <TbWorldWww />,
-                url: '',
+                url: 'https://buglift.netlify.app',
             },
         ],
     },
