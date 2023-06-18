@@ -46,6 +46,10 @@ To run the portfolio website locally, follow these steps:
 <li>JavaScript</li>
 </ul>
 
+## Credits
+
+The portfolio was developed by Russell Ramiro as a project to showcase programming skills and knowledge of web development technologies.
+
 ## License
 
 This project is licensed under the MIT License. Feel free to use the code as a reference or template for your own portfolio website. 
