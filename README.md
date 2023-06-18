@@ -39,11 +39,16 @@ To run the portfolio website locally, follow these steps:
 </ul>
 
 ## Technologies Used
+<ul>
+<li>React</li>
+<li>HTML</li>
+<li>CSS</li>
+<li>JavaScript</li>
+</ul>
 
-React
-HTML
-CSS
-JavaScript
+## Credits
+
+The portfolio was developed by Russell Ramiro as a project to showcase programming skills and knowledge of web development technologies.
 
 ## License
 
