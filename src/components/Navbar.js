@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import Wrapper from '../assets/wrappers/Navbar';
 import Logo from './Logo';
-// import mobileNav from '../utils/mobile-nav';
-import darkMode from '../utils/dark-mode';
 
 const Navbar = () => {
   const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);

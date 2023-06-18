@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Wrapper from '../assets/wrappers/Mobile';
-// import darkMode from '../utils/dark-mode';
 
 const Mobile = () => {
   const [isLightMode, setIsLightMode] = useState(false);
