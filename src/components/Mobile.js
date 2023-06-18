@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Wrapper from '../assets/wrappers/Mobile';
-import darkMode from '../utils/dark-mode';
+// import darkMode from '../utils/dark-mode';
 
 const Mobile = () => {
+  const [isLightMode, setIsLightMode] = useState(false);
+
   const darkModeHandle = () => {
-    darkMode();
+    setIsLightMode(prevMode => !prevMode);
+    document.body.classList.toggle('light-mode');
   };
 
   return (

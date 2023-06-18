@@ -34,6 +34,7 @@ a:hover {
     width: var(--size-xl);
     height: var(--size-xl);
     display: block;
+    z-index: 9999;
 }
 .bars:hover{
     color: var(--clr-green);

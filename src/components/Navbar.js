@@ -1,19 +1,37 @@
 import React, { useState } from 'react';
 import Wrapper from '../assets/wrappers/Navbar';
 import Logo from './Logo';
-import mobileNav from '../utils/mobile-nav';
+// import mobileNav from '../utils/mobile-nav';
 import darkMode from '../utils/dark-mode';
 
 const Navbar = () => {
-  const [isMobileNavOpen, setMobileNavOpen] = useState(false);
+  const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
   const [activeNav, setActiveNav] = useState('#hero');
+  const [isLightMode, setIsLightMode] = useState(false);
 
   const handleBarsClick = () => {
-    mobileNav();
+    const mobileNav = document.querySelector('.mobile-nav');
+    const mobileLinks = document.querySelectorAll('.mobile-nav__link');
+
+    setIsMobileNavOpen(!isMobileNavOpen);
+     if (!isMobileNavOpen) {
+            mobileNav.style.display = 'flex';
+            document.body.style.overflowY = 'hidden';
+        }else{
+            mobileNav.style.display = 'none';
+            document.body.style.overflowY = 'auto';
+        }
+    mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            setIsMobileNavOpen(false)
+            mobileNav.style.display = 'none';
+            document.body.style.overflowY = 'auto';
+        });
+    });
   };
 
   const handleNavLinkClick = (sectionId) => {
-    setMobileNavOpen(false);
+    setIsMobileNavOpen(false);
     setActiveNav(sectionId);
     const element = document.querySelector(sectionId);
     if (element) {
@@ -21,7 +39,8 @@ const Navbar = () => {
     }
   };
   const darkModeHandle = () => {
-    darkMode();
+    setIsLightMode(prevMode => !prevMode);
+    document.body.classList.toggle('light-mode');
   }
 
   return (
