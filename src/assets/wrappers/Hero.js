@@ -7,7 +7,7 @@ flex-direction: column;
 /* justify-content: center; */
 align-items: center;
 gap: 1rem;
-margin-top: 5rem;
+margin-top: 13rem;
 height: 100vh;
 
 .subtitle{
@@ -98,6 +98,7 @@ gap: 1.5rem;
 
 /* lg */
 @media only screen and (min-width: 1024px) {
+    margin-top: 10rem;
     .subtitle{
         font-size: var(--size-2xl);
     }

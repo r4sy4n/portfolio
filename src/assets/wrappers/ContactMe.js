@@ -5,29 +5,40 @@ margin-top: var(--size-7xl);
 
 .contact-container{
     display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: var(--size-4xl);
 }
+.contact-links{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin: var(--size-3xl) 0;
+}
 a{
-  font-size: var(--size-10xl);
-  color: var(--clr-green);
+    font-size: var(--size-10xl);
+    color: var(--clr-green);
 }
 .icon{
-    font-size: var(--size-5xl);
+    font-size: var(--size-6xl);
     color: var(--clr-green);
 }
 .contact-title{
     margin-bottom: var(--size-3xl);
 }
 .email-container p{
-    margin: var(--size-lg);
+    margin: var(--size-3xl);
 }
 .email-container a{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.email-container{
+    margin: var(--size-4xl) 0;
 }
 .contact-form{
     width: 360px;
@@ -67,13 +78,7 @@ a{
 .contact__form-area textarea{
     resize: none;
 }
-.contact-links{
-    display: flex;
-    gap: var(--size-base);
-    margin: var(--size-base);
-    justify-content: center;
-    align-items: center;
-}
+
 /* xs */
 @media only screen and (min-width: 475px) {
     .btn{
@@ -82,24 +87,35 @@ a{
 }
 /* lg */
 @media only screen and (min-width: 1024px) {
+    .form{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     .btn{
         font-size: var(--size-lg);
     }
     .icon{
-        font-size: var(--size-6xl);
+        font-size: var(--size-8xl);
     }
     a{
         font-size: 12rem;
     }
     .contact-container{
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
     }
     .contact-links{
-        flex-direction: column;
+        gap: 4rem;
     }
-    .email-container a{
-        display: block;
+    .email-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 3rem;
     }
 }
 /* xl */

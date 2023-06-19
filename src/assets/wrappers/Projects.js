@@ -11,8 +11,9 @@ a{
 .tools{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--size-base);
+    gap: var(--size-3xl);
     justify-content: center;
+    margin-top: var(--size-3xl);
     /* align-items: center; */
 }
 .icon{
@@ -94,13 +95,17 @@ a{
     margin-top: 0;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1rem;
+    gap: var(--size-3xl);
     justify-content: center;
     align-items: center;
  }   
  .swiper {
     width: 50vh;
     height: 50vh;
+ }
+ .tools{
+    margin-top: var(--size-4xl);
+
  }
 }
 /* lg */
