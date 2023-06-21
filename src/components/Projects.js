@@ -92,7 +92,7 @@ const Projects = () => {
     },
     {
       title: 'Connectify',
-      description: 'Connectify is a web application designed to connect buyers, sellers, and suppliers in the context of dropshipping. It provides a platform where buyers can find products from various sellers and suppliers, place orders, and have them shipped directly to their customers. The MERN stack forms the foundation of this application. Connectify demonstrates my proficiency in using the MERN stack to build a full-stack dropshipping application. It showcases my skills in designing and implementing the frontend using React.js, handling server-side logic and API endpoints with Express.js and Node.js, storing and retrieving data using MongoDB, implementing user authentication and authorization, and potentially integrating payment gateways.',
+      description: 'Connectify is a team project. It is a powerful dropshipping application designed to connect buyers, sellers, and suppliers in a seamless and efficient manner. The app serves as a platform where buyers can explore and purchase products from different sellers. Connectify not only showcases our skills using the MERN stack but also highlights our ability to work effectively and collaboratively in a team. It demonstrates our expertise in backend development with Express.js and Node.js, frontend development with React.js, database management with MongoDB, API integration, authentication and authorization, testing, and deployment. It also demonstrates our teamwork, communication, and project management skills.',
       tools: [
         <IconWithTooltip icon={AiOutlineHtml5} tooltip="HTML5" />, 
         <IconWithTooltip icon={FaCss3Alt} tooltip="CSS3" />, 
@@ -105,11 +105,11 @@ const Projects = () => {
       links: [
             {
                 icon: <AiOutlineGithub />,
-                url: '',
+                url: 'https://github.com/r4sy4n/connectify',
             },
             {
                 icon: <TbWorldWww />,
-                url: '',
+                url: 'https://connectify-uplift.netlify.app/',
             },
         ],
     },
