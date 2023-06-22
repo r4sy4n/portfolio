@@ -12,44 +12,46 @@ import Baccarat from './Baccarat';
 import Buglift from './Buglift';
 import Connectify from './Connectify';
 import Portfolio from './Portfolio';
+import Reveal from './Reveal';
 
 
 const FeaturedProjects = () => {
 
   return (
-    <Wrapper>
-      <div className="projects-container">
-        <div>
-          <h2 className="featured"><span>Featured</span> projects</h2>
-          <p>
-            Created as part of the learning process, the <span>goal</span> was
-            to build modern, responsive and useful web applications.
-          </p>
-          <br/>
-          <p>To find out more details about a specific project, <span>please click on it</span>.</p>
+    <Reveal>
+      <Wrapper>
+        <div className="projects-container">
+          <div>
+            <h2 className="featured"><span>Featured</span> projects</h2>
+            <p>
+              Created as part of the learning process, the <span>goal</span> was
+              to build modern, responsive and useful web applications.
+            </p>
+            <br/>
+            <p>To find out more details about a specific project, <span>please click on it</span>.</p>
+          </div>
+          <div>
+            <Swiper
+              slidesPerView={1}
+              spaceBetween={30}
+              loop={true}
+              pagination={{
+                clickable: true,
+              }}
+              autoplay={true}
+              navigation={true}
+              modules={[Pagination, Navigation, Autoplay]}
+              className="mySwiper"
+            >
+              <SwiperSlide><Portfolio/></SwiperSlide>
+              <SwiperSlide><Baccarat/></SwiperSlide>
+              <SwiperSlide><Buglift/></SwiperSlide>
+              <SwiperSlide><Connectify/></SwiperSlide>
+            </Swiper>
+          </div>
         </div>
-        <div>
-          <Swiper
-            slidesPerView={1}
-            spaceBetween={30}
-            loop={true}
-            pagination={{
-              clickable: true,
-            }}
-            autoplay={true}
-            navigation={true}
-            modules={[Pagination, Navigation, Autoplay]}
-            className="mySwiper"
-          >
-            <SwiperSlide><Portfolio/></SwiperSlide>
-            <SwiperSlide><Baccarat/></SwiperSlide>
-            <SwiperSlide><Buglift/></SwiperSlide>
-            <SwiperSlide><Connectify/></SwiperSlide>
-          </Swiper>
-        </div>
-      </div>
-      </Wrapper>
-
+        </Wrapper>
+      </Reveal>
   )
 }
 

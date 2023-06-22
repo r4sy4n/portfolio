@@ -41,6 +41,7 @@ a:hover {
 }
 /* md */
 @media only screen and (min-width: 768px) {
+    backdrop-filter: blur(12px);
     ul {
         list-style: none;
         display: flex;

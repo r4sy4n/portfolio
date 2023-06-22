@@ -18,7 +18,7 @@ import {TbBrandJavascript, TbWorldWww} from 'react-icons/tb';
 import {DiReact} from 'react-icons/di';
 import {SiMongodb, SiExpress} from 'react-icons/si';
 import {FaNode} from 'react-icons/fa';
-
+import Reveal from './Reveal';
 
 const Projects = () => {
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
@@ -120,50 +120,52 @@ const Projects = () => {
   };
 
   return (
-    <Wrapper>
-        <div id='projects' className='grid-container'>
-            <div>
-                <h2><strong>Projects</strong></h2>
-                <h2 className='title'>{slideDetails[currentSlideIndex].title}</h2>
-                <p>{slideDetails[currentSlideIndex].description}</p>
-                <div className='tools'>
-                    <div> 
-                        <h3 className='subtitle'>Tools</h3>
-                        <div className='icon'>{slideDetails[currentSlideIndex].tools}</div>
-                    </div>
-                    <div>
-                        <h3 className='subtitle'>Links</h3>
-                        <div className='icon'>
-                        {slideDetails[currentSlideIndex].links.map((link, index) => (
-                        <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
-                            {link.icon}
-                        </a>
-                        ))}
+    <Reveal>
+        <Wrapper>
+            <div id='projects' className='grid-container'>
+                <div>
+                    <h2><strong>Projects</strong></h2>
+                    <h2 className='title'>{slideDetails[currentSlideIndex].title}</h2>
+                    <p>{slideDetails[currentSlideIndex].description}</p>
+                    <div className='tools'>
+                        <div> 
+                            <h3 className='subtitle'>Tools</h3>
+                            <div className='icon'>{slideDetails[currentSlideIndex].tools}</div>
+                        </div>
+                        <div>
+                            <h3 className='subtitle'>Links</h3>
+                            <div className='icon'>
+                            {slideDetails[currentSlideIndex].links.map((link, index) => (
+                            <a key={index} href={link.url} target="_blank" rel="noopener noreferrer">
+                                {link.icon}
+                            </a>
+                            ))}
+                            </div>
                         </div>
                     </div>
                 </div>
+                <div>
+                    <Swiper
+                        slidesPerView={1}
+                        spaceBetween={30}
+                        loop={true}
+                        pagination={{
+                            clickable: true,
+                        }}
+                        navigation={true}
+                        modules={[Pagination, Navigation]}
+                        className="mySwiper"
+                        onSlideChange={handleSlideChange}
+                        >
+                        <SwiperSlide><Portfolio/></SwiperSlide>
+                        <SwiperSlide><Baccarat/></SwiperSlide>
+                        <SwiperSlide><Buglift/></SwiperSlide>
+                        <SwiperSlide><Connectify/></SwiperSlide>
+                    </Swiper>
+                </div>
             </div>
-            <div>
-                <Swiper
-                    slidesPerView={1}
-                    spaceBetween={30}
-                    loop={true}
-                    pagination={{
-                        clickable: true,
-                    }}
-                    navigation={true}
-                    modules={[Pagination, Navigation]}
-                    className="mySwiper"
-                    onSlideChange={handleSlideChange}
-                    >
-                    <SwiperSlide><Portfolio/></SwiperSlide>
-                    <SwiperSlide><Baccarat/></SwiperSlide>
-                    <SwiperSlide><Buglift/></SwiperSlide>
-                    <SwiperSlide><Connectify/></SwiperSlide>
-                </Swiper>
-            </div>
-        </div>
-    </Wrapper>
+        </Wrapper>
+    </Reveal>
   )
 }
 

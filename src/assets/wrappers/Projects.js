@@ -28,6 +28,10 @@ a{
     font-size: var(--size-4xl);
     color: var(--clr-indigo);
 }
+.icon a:hover{
+    transition: color 0.4s;
+    color: var(--clr-green);
+}
 .title{
     margin: var(--size-2xl) 0;
 }
