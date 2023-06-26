@@ -14,11 +14,12 @@ import Connectify from './Connectify';
 import Portfolio from './Portfolio';
 import {AiOutlineHtml5, AiOutlineGithub} from 'react-icons/ai';
 import {FaCss3Alt} from 'react-icons/fa';
-import {TbBrandJavascript, TbWorldWww} from 'react-icons/tb';
+import {TbBrandJavascript, TbWorldWww, TbApi} from 'react-icons/tb';
 import {DiReact} from 'react-icons/di';
 import {SiMongodb, SiExpress} from 'react-icons/si';
 import {FaNode} from 'react-icons/fa';
 import Reveal from './Reveal';
+import Pokedex from './Pokedex';
 
 const Projects = () => {
     const [currentSlideIndex, setCurrentSlideIndex] = useState(0);
@@ -64,6 +65,30 @@ const Projects = () => {
             {
                 icon: <TbWorldWww />,
                 url: 'https://baccarat-javascript-game.netlify.app',
+            },
+        ],
+    },
+    {
+      title: 'Pokedex',
+      description: 'This Pokédex application showcases my skills in manipulating APIs by retrieving and processing data from external sources. It demonstrates my ability to create a full-stack JavaScript application using React, Express.js, Node.js, and MongoDB. My attention to detail in building reusable components, integrating APIs, handling user interactions, and providing a responsive user interface showcases my proficiency as a full-stack developer.',
+      tools: [
+        <IconWithTooltip icon={AiOutlineHtml5} tooltip="HTML5" />, 
+        <IconWithTooltip icon={FaCss3Alt} tooltip="CSS3" />, 
+        <IconWithTooltip icon={TbBrandJavascript} tooltip="JavaScript" />, 
+        <IconWithTooltip icon={TbApi} tooltip="RestAPI" />, 
+        <IconWithTooltip icon={DiReact} tooltip="React" />,                
+        <IconWithTooltip icon={FaNode} tooltip="Node.js" />,                
+        <IconWithTooltip icon={SiMongodb} tooltip="MongoDB" />,               
+        <IconWithTooltip icon={SiExpress} tooltip="Express" />
+      ],
+      links: [
+            {
+                icon: <AiOutlineGithub />,
+                url: 'https://github.com/r4sy4n/pokedex',
+            },
+            {
+                icon: <TbWorldWww />,
+                url: 'https://pokedex-uplift.netlify.app',
             },
         ],
     },
@@ -159,6 +184,7 @@ const Projects = () => {
                         >
                         <SwiperSlide><Portfolio/></SwiperSlide>
                         <SwiperSlide><Baccarat/></SwiperSlide>
+                        <SwiperSlide><Pokedex/></SwiperSlide>
                         <SwiperSlide><Buglift/></SwiperSlide>
                         <SwiperSlide><Connectify/></SwiperSlide>
                     </Swiper>
