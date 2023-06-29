@@ -12,6 +12,7 @@ import Baccarat from './Baccarat';
 import Buglift from './Buglift';
 import Connectify from './Connectify';
 import Portfolio from './Portfolio';
+import ClientPortfolio from './ClientPortfolio';
 import {AiOutlineHtml5, AiOutlineGithub} from 'react-icons/ai';
 import {FaCss3Alt} from 'react-icons/fa';
 import {TbBrandJavascript, TbWorldWww, TbApi} from 'react-icons/tb';
@@ -138,6 +139,26 @@ const Projects = () => {
             },
         ],
     },
+    {
+      title: 'Client\'s Portfolio',
+      description: 'My client\'s portfolio website serves as a platform to showcase their work, skills, and achievements. It showcases my skills in React, HTML, CSS, and JavaScript by highlighting my ability to create a visually appealing and interactive website. It demonstrates my proficiency in creating reusable components with React, organizing content with HTML, styling with CSS, and implementing interactivity with JavaScript. My attention to detail, responsive design, user experience considerations, and potential integration of external APIs enhance the overall impact of the portfolio. It serves as a strong representation of my web development skills and can effectively showcase my client\'s work and expertise.',
+      tools: [
+        <IconWithTooltip icon={DiReact} tooltip="React" />,                
+        <IconWithTooltip icon={AiOutlineHtml5} tooltip="HTML5" />, 
+        <IconWithTooltip icon={FaCss3Alt} tooltip="CSS3" />,  
+        <IconWithTooltip icon={TbBrandJavascript} tooltip="JavaScript" />, 
+      ],
+      links: [
+            {
+                icon: <AiOutlineGithub />,
+                url: 'https://github.com/r4sy4n/portfolio-client-maridee',
+            },
+            {
+                icon: <TbWorldWww />,
+                url: 'https://marideeramiro.vercel.app/',
+            },
+        ],
+    },
   ];
 
   const handleSlideChange = (swiper) => {
@@ -187,6 +208,7 @@ const Projects = () => {
                         <SwiperSlide><Pokedex/></SwiperSlide>
                         <SwiperSlide><Buglift/></SwiperSlide>
                         <SwiperSlide><Connectify/></SwiperSlide>
+                        <SwiperSlide><ClientPortfolio/></SwiperSlide>
                     </Swiper>
                 </div>
             </div>

@@ -13,6 +13,7 @@ import Buglift from './Buglift';
 import Connectify from './Connectify';
 import Portfolio from './Portfolio';
 import Pokedex from './Pokedex';
+import ClientPortfolio from './ClientPortfolio';
 import Reveal from './Reveal';
 
 
@@ -49,6 +50,7 @@ const FeaturedProjects = () => {
               <SwiperSlide><Pokedex/></SwiperSlide>
               <SwiperSlide><Buglift/></SwiperSlide>
               <SwiperSlide><Connectify/></SwiperSlide>
+              <SwiperSlide><ClientPortfolio/></SwiperSlide>
             </Swiper>
           </div>
         </div>
