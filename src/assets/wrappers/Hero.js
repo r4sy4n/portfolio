@@ -7,7 +7,7 @@ flex-direction: column;
 /* justify-content: center; */
 align-items: center;
 gap: 1rem;
-margin-top: 13rem;
+margin-top: 10rem;
 height: 100vh;
 
 .subtitle{
@@ -83,7 +83,7 @@ height: 100vh;
 @media only screen and (min-width: 475px) {
 gap: 1.5rem;
     .subtitle{
-        font-size: var(--size-lg);
+        font-size: var(--size-2xl);
     }
     .title{
         font-size: var(--size-5xl);
@@ -98,9 +98,9 @@ gap: 1.5rem;
 
 /* lg */
 @media only screen and (min-width: 1024px) {
-    margin-top: 10rem;
+    margin-top: 7.5rem;
     .subtitle{
-        font-size: var(--size-2xl);
+        font-size: var(--size-3xl);
     }
     .title{
         font-size: var(--size-7xl);
@@ -115,12 +115,13 @@ gap: 1.5rem;
 
 /* xl */
 @media only screen and (min-width: 1280px) {
-gap: 2rem;
+    margin-top: 5rem;
+    gap: 2rem;
     .subtitle{
         font-size: var(--size-4xl);
     }
     .title{
-        font-size: var(--size-9xl);
+        font-size: var(--size-8xl);
     }
     .description{
         font-size: var(--size-xl);
@@ -129,6 +130,23 @@ gap: 2rem;
         font-size: var(--size-xl);
     }
 }
+/* 2xl */
+/* @media only screen and (min-width: 1536px) {
+    margin-top: 4rem;
+    gap: 2rem;
+    .subtitle{
+        font-size: var(--size-4xl);
+    }
+    .title{
+        font-size: var(--size-8xl);
+    }
+    .description{
+        font-size: var(--size-2xl);
+    }
+    .btn{
+        font-size: var(--size-2xl);
+    }
+} */
 `
 
 export default Wrapper;

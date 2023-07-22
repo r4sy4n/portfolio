@@ -122,6 +122,12 @@ a{
     height: 75vh;
   }
 }
+/* 2xl */
+@media only screen and (min-width: 1536px) {
+  .grid-container{
+    margin: 0 0 0 2rem;
+  }
+} 
 `
 
 export default Wrapper;

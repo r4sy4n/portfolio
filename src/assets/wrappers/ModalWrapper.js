@@ -33,8 +33,9 @@ li{
     background: var(--clr-dark);
     text-align: left;
     border-radius: 10px;
-    padding: 30px 50px;
+    padding: 20px 40px;
     margin: 0 var(--size-lg);
+    width: 90%;
 }
 
 .modal-close {

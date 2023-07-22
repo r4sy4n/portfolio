@@ -28,6 +28,7 @@ gap: 1rem;
 .description{
     max-width: 60ch;
     margin: var(--size-xxs) 0;
+    text-align: justify;
 }
 .icon{
     display: grid;

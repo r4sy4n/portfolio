@@ -64,7 +64,12 @@ a{
     height: 75vh;
   }
 }
-
+/* 2xl */
+@media only screen and (min-width: 1536px) {
+  .projects-container{
+    margin: 0 1rem 0 2rem;
+  }
+} 
 `
 
 export default Wrapper;
