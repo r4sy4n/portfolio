@@ -14,6 +14,7 @@ import Connectify from './Connectify';
 import Portfolio from './Portfolio';
 import Pokedex from './Pokedex';
 import ClientPortfolio from './ClientPortfolio';
+import Ecommerce from './Ecommerce';
 import Reveal from './Reveal';
 
 
@@ -45,12 +46,13 @@ const FeaturedProjects = () => {
               modules={[Pagination, Navigation, Autoplay]}
               className="mySwiper"
             >
-              <SwiperSlide><Portfolio/></SwiperSlide>
-              <SwiperSlide><Baccarat/></SwiperSlide>
-              <SwiperSlide><Pokedex/></SwiperSlide>
+              <SwiperSlide><Ecommerce/></SwiperSlide>
               <SwiperSlide><Buglift/></SwiperSlide>
+              <SwiperSlide><Pokedex/></SwiperSlide>
+              <SwiperSlide><Baccarat/></SwiperSlide>
               <SwiperSlide><Connectify/></SwiperSlide>
               <SwiperSlide><ClientPortfolio/></SwiperSlide>
+              <SwiperSlide><Portfolio/></SwiperSlide>
             </Swiper>
           </div>
         </div>
